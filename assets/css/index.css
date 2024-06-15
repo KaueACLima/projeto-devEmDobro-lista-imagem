@@ -1,0 +1,53 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Public Sans', sans-serif;
+}
+
+
+.galeria{
+    height: 100vh;
+
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.quadros-em-amostra{
+    position: relative;
+}
+
+.quadro{
+   width: 20.9rem;
+}
+
+.quadro-informacoes{
+    color: #fff;
+    position: absolute;
+    left: 2rem;
+    bottom: 3rem;
+}
+
+.quadro-informacoes h1{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.quadro-informacoes p{
+    font-size: 1rem;
+    font-weight: 100;
+    line-height: 1.24rem;
+}
+
+@media screen and (max-width: 48rem){
+    .galeria{
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin: 2rem 0 .5rem;
+    }
+}
